@@ -8,14 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
+    let columns = [
+        GridItem(.adaptive(minimum: 100))
+    ]
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        ScrollView {
+            LazyVGrid(columns: columns) {
+                CardView()
+                CardView()
+                CardView()
+                CardView()
+                CardView()
+                CardView()
+                
+            }
         }
-        .padding()
     }
 }
 
