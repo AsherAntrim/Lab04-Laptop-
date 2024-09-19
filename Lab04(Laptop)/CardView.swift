@@ -25,6 +25,7 @@ public struct CardView: View {
                 
                 Spacer()
                 
+                // Center card info
                 Text(card)
                     .font(.largeTitle)
                 
